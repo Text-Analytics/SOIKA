@@ -3,7 +3,6 @@ import nltk
 import re
 
 from dostoevsky.tokenization import RegexTokenizer 
-from dostoevsky.models import FastTextSocialNetworkModel
 from google.colab import drive
 from nltk.corpus import stopwords
 from pymorphy2 import MorphAnalyzer
@@ -35,7 +34,7 @@ def sentiment_analysis(df_input):
     # Обработка текста
     df_input = df_input.iloc[1:]
     df = pd.DataFrame()
-    df['text'] = df_input['Unnamed: 8'].fillna('')
+    df['text'] = df_input['Текст'].fillna('')
     df['clean_text'] = df['text'].apply(clean_text)
     df['lemmatized_text'] = df['clean_text'].apply(lemmatize_text)
 
