@@ -2,8 +2,8 @@ import pandas as pd
 import nltk
 import re
 
-from dostoevsky.tokenization import RegexTokenizer 
-from google.colab import drive
+from dostoevsky.tokenization import RegexTokenizer
+from dostoevsky.models import FastTextSocialNetworkModel
 from nltk.corpus import stopwords
 from pymorphy2 import MorphAnalyzer
 
