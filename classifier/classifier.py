@@ -3,7 +3,7 @@ from tqdm import tqdm
 import pandas as pd
 tqdm.pandas()
 
-REP_ID = "cc-model"
+REP_ID = "Sandrro/cc-model"
 
 def category_predictor(text, classifier):
     pred = pd.DataFrame(classifier(text, top_k=3))
