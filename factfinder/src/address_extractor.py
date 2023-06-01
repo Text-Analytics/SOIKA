@@ -1,7 +1,8 @@
 import re
-from flair.models import SequenceTagger
-from flair.data import Sentence
+
 import pandas as pd
+from flair.data import Sentence
+from flair.models import SequenceTagger
 from tqdm import tqdm
 
 tqdm.pandas()
