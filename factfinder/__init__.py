@@ -1,3 +1,3 @@
-from .src import AddressExtractor
+from .src import AddressExtractor, TextClassifier
 
-__all__ = ["AddressExtractor"]
+__all__ = ["TextClassifier", "AddressExtractor"]
