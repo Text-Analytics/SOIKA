@@ -148,7 +148,7 @@ class Streets:
         """
         This function drops parts of street names that are not the name
         of the street (e.g. avenue).
-        """
+        """ 
 
         try:
             lst = re.split(
@@ -193,7 +193,7 @@ class Streets:
 
 class Geocoder:
     """
-    test
+    This class provides a functionality of simple geocoder
     """
 
     global_crs: int = 4326
